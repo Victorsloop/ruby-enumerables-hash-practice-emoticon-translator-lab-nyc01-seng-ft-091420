@@ -26,10 +26,10 @@ def get_english_meaning(emoji_file, emoticon)
   # code goes here
   emoji_hash = load_library(emoji_file)
   emoji_hash.each do |key,value|
-    if 
-      value[:japaneese] == emoticon
+    #binding.pry
+    if value[:japanese] == emoticon
       return key
-    end 
-  end 
-  return "Sorry, that emoitcon was not found"
-end 
+  end
+end
+return "Sorry, that emoticon was not found"
+end
